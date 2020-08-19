@@ -1,8 +1,6 @@
-package com.ucx.utility.palindrome;
+package com.ucx.utility.palindrome.dto;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 public class PalindromeResponseDto {

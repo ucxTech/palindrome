@@ -1,8 +1,11 @@
-package com.ucx.utility.palindrome;
+package com.ucx.utility.palindrome.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.ucx.utility.palindrome.dto.PalindromeRequestDto;
+import com.ucx.utility.palindrome.dto.PalindromeResponseDto;
+import com.ucx.utility.palindrome.service.PalindromeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

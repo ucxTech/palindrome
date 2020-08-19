@@ -1,4 +1,4 @@
-package com.ucx.utility.palindrome;
+package com.ucx.utility.palindrome.service;
 
 import org.springframework.stereotype.Service;
 

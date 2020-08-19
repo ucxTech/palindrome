@@ -1,4 +1,4 @@
-package com.ucx.utility.palindrome;
+package com.ucx.utility.palindrome.dto;
 
 import lombok.Data;
 
