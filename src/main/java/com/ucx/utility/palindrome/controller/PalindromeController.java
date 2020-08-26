@@ -55,9 +55,19 @@ public class PalindromeController {
     }
 
     @PostMapping("palindrome3")
-    public ResponseEntity<PalindromeResponseDto> palindromeRequest2(@RequestBody PalindromeRequestDto input){
+    public ResponseEntity<PalindromeResponseDto> palindromeRequest3(@RequestBody PalindromeRequestDto input){
         PalindromeResponseDto palindromeResponseDto = new PalindromeResponseDto();
         boolean result = palindromeService.isPalindrome(input.getText());
+        palindromeResponseDto.setPalindrome(result);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(palindromeResponseDto);
+    }
+
+    @GetMapping("palindrome4")
+    public ResponseEntity<PalindromeResponseDto> palindromeRequest4(@RequestParam String text){
+        PalindromeResponseDto palindromeResponseDto = new PalindromeResponseDto();
+        boolean result = palindromeService.isPalindrome(text);
         palindromeResponseDto.setPalindrome(result);
         return ResponseEntity
                 .status(HttpStatus.OK)
